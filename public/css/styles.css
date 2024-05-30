@@ -1,0 +1,131 @@
+body {
+    background: url('13077.png') center/cover no-repeat, linear-gradient(to bottom, #000000, #000000); /* Background template*/
+    color: #ffffff; /* Text color on light background */
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1rem;
+
+}
+
+nav a {
+    color: #ffffff; /* Link color set to white */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7e5f; /* link color on hover */
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff; /* Link color on dark background */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff; /*  link color on hover */
+    text-decoration: underline;
+}
+
+.content {
+    padding: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headers */
+h1, h2 {
+    color: #ffffff; /* Heading color on light background */
+}
+
+/* Other Elements */
+p {
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #ffffff; /* Text color on light background */
+}
+
+p:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    mix-blend-mode: lighten; /* Blend mode on hover */
+}
+
+button {
+    background-color: #ffffff;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Keyframes for animations, this creates the fading in animation when you lcick on a new page*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*a[href="index.html"] {
+    color: #ffffff; /* Set the color of the submission page link to white */
+
+/*}*/
+
+.cta-button {
+    display: inline-block; /* Makes the link behave like a button */
+    background-color: #000080; /* Background color for the button */
+    color: #ffffff; /* Text color */
+    padding: 1rem 2rem; /* Padding around the text */
+    border-radius: 5px; /* gives itt rounded corners */
+    text-decoration: none; /* Removes underline of the link */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition when you hover your mouse over the button */
+}
+
+.cta-button:hover {
+    background-color: #808080; /* this changes background color on the hover when you  */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#submit {
+    text-align: center; /* Center the content in the section */
+    margin-top: 2rem; /* Add some space above the section */
+}
+
+
+
+
+
